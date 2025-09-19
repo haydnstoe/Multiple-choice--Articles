@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Article Usage in Context</title>
+  <title>Article Usage Test</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
     body {
@@ -10,20 +10,16 @@
       margin: 2em;
       line-height: 1.5;
     }
-    .question.invalid > label {
+    select.invalid {
       outline: 2px solid red;
-    }
-    .options label {
-      margin-right: 1em;
-      cursor: pointer;
-    }
-    #progress {
-      margin-bottom: 1em;
-      font-size: 1.1em;
     }
     .error-message {
       color: red;
       margin-bottom: 1em;
+    }
+    #progress {
+      margin-bottom: 1em;
+      font-size: 1.1em;
     }
     #results {
       margin-top: 2em;
@@ -49,144 +45,94 @@
 </head>
 <body>
 
-  <h1>Fill the Missing Article</h1>
-  <p>Each sentence below has exactly one missing article. Choose <em>the</em>, <em>a/an</em>, or <em>nothing</em> in context.</p>
-  <div id="progress">Questions answered: 0 of 11</div>
+  <h1>Article Usage Test</h1>
+  <p>Every article has been removed from the text below. Select the correct article for each blank.</p>
+  <div id="progress">Questions answered: 0 of 30</div>
   <div id="error" class="error-message"></div>
 
   <form id="articleTest">
 
-    <p>
-      1. I was strolling along
-      <span id="q1" class="question">
-        <span class="options">
-          <label><input type="radio" name="q1" value="the"> the</label>
-          <label><input type="radio" name="q1" value="a"> a/an</label>
-          <label><input type="radio" name="q1" value="nothing"> nothing</label>
-        </span>
-      </span>
-      Via Sistina one morning.
-    </p>
+    <p>1. I was strolling along 
+      <select name="q1"><option value="">--</option><option value="the">the</option><option value="a">a/an</option><option value="nothing">nothing</option></select> 
+      Via Sistina one morning.</p>
 
-    <p>
-      2.
-      <span id="q2" class="question">
-        <span class="options">
-          <label><input type="radio" name="q2" value="the"> the</label>
-          <label><input type="radio" name="q2" value="a"> a/an</label>
-          <label><input type="radio" name="q2" value="nothing"> nothing</label>
-        </span>
-      </span>
-      Fiat Croma shot past and screeched to a smoky halt a hundred feet up the road.
-    </p>
+    <p>2. 
+      <select name="q2"><option value="">--</option><option value="the">the</option><option value="a">a/an</option><option value="nothing">nothing</option></select> 
+      Fiat Croma shot past and screeched to 
+      <select name="q3"><option value="">--</option><option value="the">the</option><option value="a">a/an</option><option value="nothing">nothing</option></select> 
+      smoky halt 
+      <select name="q4"><option value="">--</option><option value="the">the</option><option value="a">a/an</option><option value="nothing">nothing</option></select> 
+      hundred feet up 
+      <select name="q5"><option value="">--</option><option value="the">the</option><option value="a">a/an</option><option value="nothing">nothing</option></select> 
+      road.</p>
 
-    <p>
-      3. Without pause,
-      <span id="q3" class="question">
-        <span class="options">
-          <label><input type="radio" name="q3" value="the"> the</label>
-          <label><input type="radio" name="q3" value="a"> a/an</label>
-          <label><input type="radio" name="q3" value="nothing"> nothing</label>
-        </span>
-      </span>
-      driver lurched into reverse and came barrelling backwards down the street in the direction of a parking space that was precisely the length of his Fiat, less two and a half feet.
-    </p>
+    <p>3. Without pause 
+      <select name="q6"><option value="">--</option><option value="the">the</option><option value="a">a/an</option><option value="nothing">nothing</option></select> 
+      driver lurched into reverse and came barrelling backwards down 
+      <select name="q7"><option value="">--</option><option value="the">the</option><option value="a">a/an</option><option value="nothing">nothing</option></select> 
+      street in 
+      <select name="q8"><option value="">--</option><option value="the">the</option><option value="a">a/an</option><option value="nothing">nothing</option></select> 
+      direction of 
+      <select name="q9"><option value="">--</option><option value="the">the</option><option value="a">a/an</option><option value="nothing">nothing</option></select> 
+      parking space that was precisely 
+      <select name="q10"><option value="">--</option><option value="the">the</option><option value="a">a/an</option><option value="nothing">nothing</option></select> 
+      length of his Fiat, less two and 
+      <select name="q11"><option value="">--</option><option value="the">the</option><option value="a">a/an</option><option value="nothing">nothing</option></select> 
+      half feet.</p>
 
-    <p>
-      4. Without slowing even fractionally, he veered
-      <span id="q4" class="question">
-        <span class="options">
-          <label><input type="radio" name="q4" value="the"> the</label>
-          <label><input type="radio" name="q4" value="a"> a/an</label>
-          <label><input type="radio" name="q4" value="nothing"> nothing</label>
-        </span>
-      </span>
-      car into the space and crashed resoundingly into a parked Renault.
-    </p>
+    <p>4. Without slowing even fractionally, he veered 
+      <select name="q12"><option value="">--</option><option value="the">the</option><option value="a">a/an</option><option value="nothing">nothing</option></select> 
+      car into 
+      <select name="q13"><option value="">--</option><option value="the">the</option><option value="a">a/an</option><option value="nothing">nothing</option></select> 
+      space and crashed resoundingly into 
+      <select name="q14"><option value="">--</option><option value="the">the</option><option value="a">a/an</option><option value="nothing">nothing</option></select> 
+      parked Renault.</p>
 
-    <p>
-      5. Nothing happened for
-      <span id="q5" class="question">
-        <span class="options">
-          <label><input type="radio" name="q5" value="the"> the</label>
-          <label><input type="radio" name="q5" value="a"> a/an</label>
-          <label><input type="radio" name="q5" value="nothing"> nothing</label>
-        </span>
-      </span>
-      minute.
-    </p>
+    <p>5. Nothing happened for 
+      <select name="q15"><option value="">--</option><option value="the">the</option><option value="a">a/an</option><option value="nothing">nothing</option></select> 
+      minute.</p>
 
-    <p>
-      6. There was just
-      <span id="q6" class="question">
-        <span class="options">
-          <label><input type="radio" name="q6" value="the"> the</label>
-          <label><input type="radio" name="q6" value="a"> a/an</label>
-          <label><input type="radio" name="q6" value="nothing"> nothing</label>
-        </span>
-      </span>
-      hiss of escaping steam.
-    </p>
+    <p>6. There was just 
+      <select name="q16"><option value="">--</option><option value="the">the</option><option value="a">a/an</option><option value="nothing">nothing</option></select> 
+      hiss of escaping steam.</p>
 
-    <p>
-      7. Then
-      <span id="q7" class="question">
-        <span class="options">
-          <label><input type="radio" name="q7" value="the"> the</label>
-          <label><input type="radio" name="q7" value="a"> a/an</label>
-          <label><input type="radio" name="q7" value="nothing"> nothing</label>
-        </span>
-      </span>
-      driver leaped from his car.
-    </p>
+    <p>7. Then 
+      <select name="q17"><option value="">--</option><option value="the">the</option><option value="a">a/an</option><option value="nothing">nothing</option></select> 
+      driver leaped from his car.</p>
 
-    <p>
-      8. He gazed in profound disbelief at
-      <span id="q8" class="question">
-        <span class="options">
-          <label><input type="radio" name="q8" value="the"> the</label>
-          <label><input type="radio" name="q8" value="a"> a/an</label>
-          <label><input type="radio" name="q8" value="nothing"> nothing</label>
-        </span>
-      </span>
-      devastation before him – crumpled metal, splintered tail lights, the exhaust pipe of his own car limply grazing the pavement – and regarded it with as much mystification as if it had dropped on him from the sky.
-    </p>
+    <p>8. He gazed in profound disbelief at 
+      <select name="q18"><option value="">--</option><option value="the">the</option><option value="a">a/an</option><option value="nothing">nothing</option></select> 
+      devastation before him – crumpled metal, splintered tail lights, 
+      <select name="q19"><option value="">--</option><option value="the">the</option><option value="a">a/an</option><option value="nothing">nothing</option></select> 
+      exhaust pipe of his own car limply grazing 
+      <select name="q20"><option value="">--</option><option value="the">the</option><option value="a">a/an</option><option value="nothing">nothing</option></select> 
+      pavement – and regarded it with as much mystification as if it had dropped on him from 
+      <select name="q21"><option value="">--</option><option value="the">the</option><option value="a">a/an</option><option value="nothing">nothing</option></select> 
+      sky.</p>
 
-    <p>
-      9. He kicked
-      <span id="q9" class="question">
-        <span class="options">
-          <label><input type="radio" name="q9" value="the"> the</label>
-          <label><input type="radio" name="q9" value="a"> a/an</label>
-          <label><input type="radio" name="q9" value="nothing"> nothing</label>
-        </span>
-      </span>
-      Renault in the side as hard as he could, denting the door and punishing its absent owner for having the gall to park it there.
-    </p>
+    <p>9. He kicked 
+      <select name="q22"><option value="">--</option><option value="the">the</option><option value="a">a/an</option><option value="nothing">nothing</option></select> 
+      Renault in 
+      <select name="q23"><option value="">--</option><option value="the">the</option><option value="a">a/an</option><option value="nothing">nothing</option></select> 
+      side as hard as he could, denting 
+      <select name="q24"><option value="">--</option><option value="the">the</option><option value="a">a/an</option><option value="nothing">nothing</option></select> 
+      door and punishing its absent owner for having 
+      <select name="q25"><option value="">--</option><option value="the">the</option><option value="a">a/an</option><option value="nothing">nothing</option></select> 
+      gall to park it there.</p>
 
-    <p>
-      10. Peace returned once again to
-      <span id="q10" class="question">
-        <span class="options">
-          <label><input type="radio" name="q10" value="the"> the</label>
-          <label><input type="radio" name="q10" value="a"> a/an</label>
-          <label><input type="radio" name="q10" value="nothing"> nothing</label>
-        </span>
-      </span>
-      Via Sistina, apart from the occasional clank of a piece of metal dropping off the stricken Renault.
-    </p>
+    <p>10. Peace returned once again to 
+      <select name="q26"><option value="">--</option><option value="the">the</option><option value="a">a/an</option><option value="nothing">nothing</option></select> 
+      Via Sistina, apart from 
+      <select name="q27"><option value="">--</option><option value="the">the</option><option value="a">a/an</option><option value="nothing">nothing</option></select> 
+      occasional clank of 
+      <select name="q28"><option value="">--</option><option value="the">the</option><option value="a">a/an</option><option value="nothing">nothing</option></select> 
+      piece of metal dropping off 
+      <select name="q29"><option value="">--</option><option value="the">the</option><option value="a">a/an</option><option value="nothing">nothing</option></select> 
+      stricken Renault.</p>
 
-    <p>
-      11. No one but me batted
-      <span id="q11" class="question">
-        <span class="options">
-          <label><input type="radio" name="q11" value="the"> the</label>
-          <label><input type="radio" name="q11" value="a"> a/an</label>
-          <label><input type="radio" name="q11" value="nothing"> nothing</label>
-        </span>
-      </span>
-      eye.
-    </p>
+    <p>11. No one but me batted 
+      <select name="q30"><option value="">--</option><option value="the">the</option><option value="a">a/an</option><option value="nothing">nothing</option></select> 
+      eye.</p>
 
     <button type="submit">Submit Answers</button>
   </form>
@@ -196,53 +142,64 @@
   <script>
     (function() {
       const form = document.getElementById('articleTest');
-      const total = 11;
+      const total = 30;
       const progressDiv = document.getElementById('progress');
       const errorDiv = document.getElementById('error');
 
       const correctAnswers = {
-        q1: 'the',
-        q2: 'a',
-        q3: 'the',
-        q4: 'the',
-        q5: 'a',
-        q6: 'the',
-        q7: 'the',
-        q8: 'the',
-        q9: 'the',
-        q10: 'the',
-        q11: 'a'
+        q1: 'the',  q2: 'a',  q3: 'a',  q4: 'a',  q5: 'the',
+        q6: 'the', q7: 'the', q8: 'the', q9: 'a', q10: 'the',
+        q11: 'a', q12: 'the', q13: 'the', q14: 'a', q15: 'a',
+        q16: 'the', q17: 'the', q18: 'the', q19: 'the', q20: 'the',
+        q21: 'the', q22: 'the', q23: 'the', q24: 'the', q25: 'the',
+        q26: 'the', q27: 'the', q28: 'a', q29: 'the', q30: 'a'
       };
 
       const explanations = {
-        q1: 'Use "the" because Via Sistina is a specific street.',
-        q2: 'Use "a/an" ("a") to introduce one Fiat Croma.',
-        q3: 'Use "the" to refer to that particular driver.',
-        q4: 'Use "the" for that specific car.',
-        q5: 'Use "a/an" ("a") for one minute.',
-        q6: 'Use "the" for the specific hiss of steam.',
-        q7: 'Use "the" for the driver just mentioned.',
-        q8: 'Use "the" for the devastation he sees.',
-        q9: 'Use "the" for that Renault he hit.',
-        q10: 'Use "the" for the proper name Via Sistina.',
-        q11: 'Use "a/an" ("a") before a vowel sound in "eye."'
+        q1: 'Use "the" for Via Sistina.',
+        q2: 'Use "a" for a Fiat Croma.',
+        q3: 'Use "a" for a smoky halt.',
+        q4: 'Use "a" for a hundred feet.',
+        q5: 'Use "the" for the road.',
+        q6: 'Use "the" for the driver.',
+        q7: 'Use "the" for the street.',
+        q8: 'Use "the" for the direction.',
+        q9: 'Use "a" for a parking space.',
+        q10: 'Use "the" for the length.',
+        q11: 'Use "a" for a half feet.',
+        q12: 'Use "the" for the car.',
+        q13: 'Use "the" for the space.',
+        q14: 'Use "a" for a parked Renault.',
+        q15: 'Use "a" for a minute.',
+        q16: 'Use "the" for the hiss.',
+        q17: 'Use "the" for the driver.',
+        q18: 'Use "the" for the devastation.',
+        q19: 'Use "the" for the exhaust pipe.',
+        q20: 'Use "the" for the pavement.',
+        q21: 'Use "the" for the sky.',
+        q22: 'Use "the" for the Renault.',
+        q23: 'Use "the" for the side.',
+        q24: 'Use "the" for the door.',
+        q25: 'Use "the" for the gall.',
+        q26: 'Use "the" for Via Sistina.',
+        q27: 'Use "the" for the occasional clank.',
+        q28: 'Use "a" for a piece of metal.',
+        q29: 'Use "the" for the stricken Renault.',
+        q30: 'Use "a" (an) for an eye.'
       };
 
       function updateProgress() {
         let answered = 0;
         for (let i = 1; i <= total; i++) {
-          if (form.querySelector(`input[name="q${i}"]:checked`)) {
-            answered++;
-          }
+          const sel = form.querySelector(`select[name="q${i}"]`);
+          if (sel && sel.value) answered++;
         }
         progressDiv.textContent = `Questions answered: ${answered} of ${total}`;
       }
 
       form.addEventListener('change', () => {
         errorDiv.textContent = '';
-        document.querySelectorAll('.question.invalid').forEach(el => {
-          el.classList.remove('invalid');
-        });
+        form.querySelectorAll('select').forEach(sel => sel.classList.remove('invalid'));
         updateProgress();
       });
 
@@ -251,45 +208,45 @@
         errorDiv.textContent = '';
         let allAnswered = true;
 
-        // validate all answered
         for (let i = 1; i <= total; i++) {
-          const container = document.getElementById(`q${i}`);
-          if (!form.querySelector(`input[name="q${i}"]:checked`)) {
+          const sel = form.querySelector(`select[name="q${i}"]`);
+          if (!sel.value) {
             allAnswered = false;
-            container.classList.add('invalid');
+            sel.classList.add('invalid');
           }
         }
+
         if (!allAnswered) {
           errorDiv.textContent = 'Please answer all questions before submitting.';
           return;
         }
 
-        // scoring
         let score = 0;
         let output = '';
+
         for (let i = 1; i <= total; i++) {
           const key = 'q' + i;
-          const userAnswer = form.querySelector(`input[name="${key}"]:checked`).value;
+          const sel = form.querySelector(`select[name="${key}"]`);
+          const user = sel.value;
           const correct = correctAnswers[key];
-          const isCorrect = userAnswer === correct;
+          const isCorrect = user === correct;
           if (isCorrect) score++;
           output += `
             <div class="question-result">
-              <strong>${i}.</strong> You answered "<em>${userAnswer}</em>". 
-              ${isCorrect
-                ? '<span class="correct">Correct.</span>'
-                : '<span class="incorrect">Incorrect.</span>'}
+              <strong>${i}.</strong> You chose "<em>${user}</em>". 
+              ${isCorrect ? '<span class="correct">Correct.</span>' : '<span class="incorrect">Incorrect.</span>'}
               <div class="explanation">${explanations[key]}</div>
             </div>
           `;
         }
+
         output += `<h3>Your total score: ${score} / ${total}</h3>`;
         document.getElementById('results').innerHTML = output;
       });
 
-      // initialize progress
       updateProgress();
     })();
   </script>
+
 </body>
 </html>
