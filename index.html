@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Article Usage Test</title>
+  <title>Article Usage in Context</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
     body {
@@ -10,16 +10,8 @@
       margin: 2em;
       line-height: 1.5;
     }
-    fieldset {
-      border: 1px solid #ccc;
-      padding: 1em;
-      margin-bottom: 1em;
-    }
-    fieldset.invalid {
-      border-color: red;
-    }
-    legend {
-      font-weight: bold;
+    .question.invalid > label {
+      outline: 2px solid red;
     }
     .options label {
       margin-right: 1em;
@@ -57,255 +49,144 @@
 </head>
 <body>
 
-  <h1>Article Usage Test</h1>
-  <p>Choose <em>the</em>, <em>a/an</em>, or <em>nothing</em> for each blank.</p>
-  <div id="progress">Questions answered: 0 of 27</div>
+  <h1>Fill the Missing Article</h1>
+  <p>Each sentence below has exactly one missing article. Choose <em>the</em>, <em>a/an</em>, or <em>nothing</em> in context.</p>
+  <div id="progress">Questions answered: 0 of 11</div>
   <div id="error" class="error-message"></div>
 
   <form id="articleTest">
 
-    <fieldset id="q1">
-      <legend>1. I was strolling along ___ Via Sistina one morning.</legend>
-      <div class="options">
-        <label><input type="radio" name="q1" value="the"> the</label>
-        <label><input type="radio" name="q1" value="a"> a/an</label>
-        <label><input type="radio" name="q1" value="nothing"> nothing</label>
-      </div>
-    </fieldset>
+    <p>
+      1. I was strolling along
+      <span id="q1" class="question">
+        <span class="options">
+          <label><input type="radio" name="q1" value="the"> the</label>
+          <label><input type="radio" name="q1" value="a"> a/an</label>
+          <label><input type="radio" name="q1" value="nothing"> nothing</label>
+        </span>
+      </span>
+      Via Sistina one morning.
+    </p>
 
-    <fieldset id="q2">
-      <legend>2. ___ Fiat Croma shot past.</legend>
-      <div class="options">
-        <label><input type="radio" name="q2" value="the"> the</label>
-        <label><input type="radio" name="q2" value="a"> a/an</label>
-        <label><input type="radio" name="q2" value="nothing"> nothing</label>
-      </div>
-    </fieldset>
+    <p>
+      2.
+      <span id="q2" class="question">
+        <span class="options">
+          <label><input type="radio" name="q2" value="the"> the</label>
+          <label><input type="radio" name="q2" value="a"> a/an</label>
+          <label><input type="radio" name="q2" value="nothing"> nothing</label>
+        </span>
+      </span>
+      Fiat Croma shot past and screeched to a smoky halt a hundred feet up the road.
+    </p>
 
-    <fieldset id="q3">
-      <legend>3. It screeched to ___ smoky halt.</legend>
-      <div class="options">
-        <label><input type="radio" name="q3" value="the"> the</label>
-        <label><input type="radio" name="q3" value="a"> a/an</label>
-        <label><input type="radio" name="q3" value="nothing"> nothing</label>
-      </div>
-    </fieldset>
+    <p>
+      3. Without pause,
+      <span id="q3" class="question">
+        <span class="options">
+          <label><input type="radio" name="q3" value="the"> the</label>
+          <label><input type="radio" name="q3" value="a"> a/an</label>
+          <label><input type="radio" name="q3" value="nothing"> nothing</label>
+        </span>
+      </span>
+      driver lurched into reverse and came barrelling backwards down the street in the direction of a parking space that was precisely the length of his Fiat, less two and a half feet.
+    </p>
 
-    <fieldset id="q4">
-      <legend>4. A hundred feet up ___ road.</legend>
-      <div class="options">
-        <label><input type="radio" name="q4" value="the"> the</label>
-        <label><input type="radio" name="q4" value="a"> a/an</label>
-        <label><input type="radio" name="q4" value="nothing"> nothing</label>
-      </div>
-    </fieldset>
+    <p>
+      4. Without slowing even fractionally, he veered
+      <span id="q4" class="question">
+        <span class="options">
+          <label><input type="radio" name="q4" value="the"> the</label>
+          <label><input type="radio" name="q4" value="a"> a/an</label>
+          <label><input type="radio" name="q4" value="nothing"> nothing</label>
+        </span>
+      </span>
+      car into the space and crashed resoundingly into a parked Renault.
+    </p>
 
-    <fieldset id="q5">
-      <legend>5. Hundred feet up ___ road.</legend>
-      <div class="options">
-        <label><input type="radio" name="q5" value="the"> the</label>
-        <label><input type="radio" name="q5" value="a"> a/an</label>
-        <label><input type="radio" name="q5" value="nothing"> nothing</label>
-      </div>
-    </fieldset>
+    <p>
+      5. Nothing happened for
+      <span id="q5" class="question">
+        <span class="options">
+          <label><input type="radio" name="q5" value="the"> the</label>
+          <label><input type="radio" name="q5" value="a"> a/an</label>
+          <label><input type="radio" name="q5" value="nothing"> nothing</label>
+        </span>
+      </span>
+      minute.
+    </p>
 
-    <fieldset id="q6">
-      <legend>6. Without pause, ___ driver lurched into reverse.</legend>
-      <div class="options">
-        <label><input type="radio" name="q6" value="the"> the</label>
-        <label><input type="radio" name="q6" value="a"> a/an</label>
-        <label><input type="radio" name="q6" value="nothing"> nothing</label>
-      </div>
-    </fieldset>
+    <p>
+      6. There was just
+      <span id="q6" class="question">
+        <span class="options">
+          <label><input type="radio" name="q6" value="the"> the</label>
+          <label><input type="radio" name="q6" value="a"> a/an</label>
+          <label><input type="radio" name="q6" value="nothing"> nothing</label>
+        </span>
+      </span>
+      hiss of escaping steam.
+    </p>
 
-    <fieldset id="q7">
-      <legend>7. He barreled down ___ street.</legend>
-      <div class="options">
-        <label><input type="radio" name="q7" value="the"> the</label>
-        <label><input type="radio" name="q7" value="a"> a/an</label>
-        <label><input type="radio" name="q7" value="nothing"> nothing</label>
-      </div>
-    </fieldset>
+    <p>
+      7. Then
+      <span id="q7" class="question">
+        <span class="options">
+          <label><input type="radio" name="q7" value="the"> the</label>
+          <label><input type="radio" name="q7" value="a"> a/an</label>
+          <label><input type="radio" name="q7" value="nothing"> nothing</label>
+        </span>
+      </span>
+      driver leaped from his car.
+    </p>
 
-    <fieldset id="q8">
-      <legend>8. In ___ direction of a parking space.</legend>
-      <div class="options">
-        <label><input type="radio" name="q8" value="the"> the</label>
-        <label><input type="radio" name="q8" value="a"> a/an</label>
-        <label><input type="radio" name="q8" value="nothing"> nothing</label>
-      </div>
-    </fieldset>
+    <p>
+      8. He gazed in profound disbelief at
+      <span id="q8" class="question">
+        <span class="options">
+          <label><input type="radio" name="q8" value="the"> the</label>
+          <label><input type="radio" name="q8" value="a"> a/an</label>
+          <label><input type="radio" name="q8" value="nothing"> nothing</label>
+        </span>
+      </span>
+      devastation before him – crumpled metal, splintered tail lights, the exhaust pipe of his own car limply grazing the pavement – and regarded it with as much mystification as if it had dropped on him from the sky.
+    </p>
 
-    <fieldset id="q9">
-      <legend>9. Towards ___ parking space.</legend>
-      <div class="options">
-        <label><input type="radio" name="q9" value="the"> the</label>
-        <label><input type="radio" name="q9" value="a"> a/an</label>
-        <label><input type="radio" name="q9" value="nothing"> nothing</label>
-      </div>
-    </fieldset>
+    <p>
+      9. He kicked
+      <span id="q9" class="question">
+        <span class="options">
+          <label><input type="radio" name="q9" value="the"> the</label>
+          <label><input type="radio" name="q9" value="a"> a/an</label>
+          <label><input type="radio" name="q9" value="nothing"> nothing</label>
+        </span>
+      </span>
+      Renault in the side as hard as he could, denting the door and punishing its absent owner for having the gall to park it there.
+    </p>
 
-    <fieldset id="q10">
-      <legend>10. Precisely ___ length of his Fiat.</legend>
-      <div class="options">
-        <label><input type="radio" name="q10" value="the"> the</label>
-        <label><input type="radio" name="q10" value="a"> a/an</label>
-        <label><input type="radio" name="q10" value="nothing"> nothing</label>
-      </div>
-    </fieldset>
+    <p>
+      10. Peace returned once again to
+      <span id="q10" class="question">
+        <span class="options">
+          <label><input type="radio" name="q10" value="the"> the</label>
+          <label><input type="radio" name="q10" value="a"> a/an</label>
+          <label><input type="radio" name="q10" value="nothing"> nothing</label>
+        </span>
+      </span>
+      Via Sistina, apart from the occasional clank of a piece of metal dropping off the stricken Renault.
+    </p>
 
-    <fieldset id="q11">
-      <legend>11. He crashed into ___ parked Renault.</legend>
-      <div class="options">
-        <label><input type="radio" name="q11" value="the"> the</label>
-        <label><input type="radio" name="q11" value="a"> a/an</label>
-        <label><input type="radio" name="q11" value="nothing"> nothing</label>
-      </div>
-    </fieldset>
-
-    <fieldset id="q12">
-      <legend>12. Nothing happened for ___ minute.</legend>
-      <div class="options">
-        <label><input type="radio" name="q12" value="the"> the</label>
-        <label><input type="radio" name="q12" value="a"> a/an</label>
-        <label><input type="radio" name="q12" value="nothing"> nothing</label>
-      </div>
-    </fieldset>
-
-    <fieldset id="q13">
-      <legend>13. There was just ___ hiss of escaping steam.</legend>
-      <div class="options">
-        <label><input type="radio" name="q13" value="the"> the</label>
-        <label><input type="radio" name="q13" value="a"> a/an</label>
-        <label><input type="radio" name="q13" value="nothing"> nothing</label>
-      </div>
-    </fieldset>
-
-    <fieldset id="q14">
-      <legend>14. Then ___ driver leaped from his car.</legend>
-      <div class="options">
-        <label><input type="radio" name="q14" value="the"> the</label>
-        <label><input type="radio" name="q14" value="a"> a/an</label>
-        <label><input type="radio" name="q14" value="nothing"> nothing</label>
-      </div>
-    </fieldset>
-
-    <fieldset id="q15">
-      <legend>15. He gazed at ___ devastation before him.</legend>
-      <div class="options">
-        <label><input type="radio" name="q15" value="the"> the</label>
-        <label><input type="radio" name="q15" value="a"> a/an</label>
-        <label><input type="radio" name="q15" value="nothing"> nothing</label>
-      </div>
-    </fieldset>
-
-    <fieldset id="q16">
-      <legend>16. Splintered tail lights, ___ exhaust pipe grazing pavement.</legend>
-      <div class="options">
-        <label><input type="radio" name="q16" value="the"> the</label>
-        <label><input type="radio" name="q16" value="a"> a/an</label>
-        <label><input type="radio" name="q16" value="nothing"> nothing</label>
-      </div>
-    </fieldset>
-
-    <fieldset id="q17">
-      <legend>17. Grazing ___ pavement.</legend>
-      <div class="options">
-        <label><input type="radio" name="q17" value="the"> the</label>
-        <label><input type="radio" name="q17" value="a"> a/an</label>
-        <label><input type="radio" name="q17" value="nothing"> nothing</label>
-      </div>
-    </fieldset>
-
-    <fieldset id="q18">
-      <legend>18. Dropped from ___ sky.</legend>
-      <div class="options">
-        <label><input type="radio" name="q18" value="the"> the</label>
-        <label><input type="radio" name="q18" value="a"> a/an</label>
-        <label><input type="radio" name="q18" value="nothing"> nothing</label>
-      </div>
-    </fieldset>
-
-    <fieldset id="q19">
-      <legend>19. He kicked ___ Renault in the side.</legend>
-      <div class="options">
-        <label><input type="radio" name="q19" value="the"> the</label>
-        <label><input type="radio" name="q19" value="a"> a/an</label>
-        <label><input type="radio" name="q19" value="nothing"> nothing</label>
-      </div>
-    </fieldset>
-
-    <fieldset id="q20">
-      <legend>20. Renault in ___ side.</legend>
-      <div class="options">
-        <label><input type="radio" name="q20" value="the"> the</label>
-        <label><input type="radio" name="q20" value="a"> a/an</label>
-        <label><input type="radio" name="q20" value="nothing"> nothing</label>
-      </div>
-    </fieldset>
-
-    <fieldset id="q21">
-      <legend>21. Denting ___ door.</legend>
-      <div class="options">
-        <label><input type="radio" name="q21" value="the"> the</label>
-        <label><input type="radio" name="q21" value="a"> a/an</label>
-        <label><input type="radio" name="q21" value="nothing"> nothing</label>
-      </div>
-    </fieldset>
-
-    <fieldset id="q22">
-      <legend>22. Punishing its owner for having ___ gall to park there.</legend>
-      <div class="options">
-        <label><input type="radio" name="q22" value="the"> the</label>
-        <label><input type="radio" name="q22" value="a"> a/an</label>
-        <label><input type="radio" name="q22" value="nothing"> nothing</label>
-      </div>
-    </fieldset>
-
-    <fieldset id="q23">
-      <legend>23. Peace returned to ___ Via Sistina.</legend>
-      <div class="options">
-        <label><input type="radio" name="q23" value="the"> the</label>
-        <label><input type="radio" name="q23" value="a"> a/an</label>
-        <label><input type="radio" name="q23" value="nothing"> nothing</label>
-      </div>
-    </fieldset>
-
-    <fieldset id="q24">
-      <legend>24. Apart from ___ occasional clank.</legend>
-      <div class="options">
-        <label><input type="radio" name="q24" value="the"> the</label>
-        <label><input type="radio" name="q24" value="a"> a/an</label>
-        <label><input type="radio" name="q24" value="nothing"> nothing</label>
-      </div>
-    </fieldset>
-
-    <fieldset id="q25">
-      <legend>25. Clank of ___ piece of metal.</legend>
-      <div class="options">
-        <label><input type="radio" name="q25" value="the"> the</label>
-        <label><input type="radio" name="q25" value="a"> a/an</label>
-        <label><input type="radio" name="q25" value="nothing"> nothing</label>
-      </div>
-    </fieldset>
-
-    <fieldset id="q26">
-      <legend>26. Of ___ piece of metal dropping off.</legend>
-      <div class="options">
-        <label><input type="radio" name="q26" value="the"> the</label>
-        <label><input type="radio" name="q26" value="a"> a/an</label>
-        <label><input type="radio" name="q26" value="nothing"> nothing</label>
-      </div>
-    </fieldset>
-
-    <fieldset id="q27">
-      <legend>27. No one but me batted ___ eye.</legend>
-      <div class="options">
-        <label><input type="radio" name="q27" value="the"> the</label>
-        <label><input type="radio" name="q27" value="a"> a/an</label>
-        <label><input type="radio" name="q27" value="nothing"> nothing</label>
-      </div>
-    </fieldset>
+    <p>
+      11. No one but me batted
+      <span id="q11" class="question">
+        <span class="options">
+          <label><input type="radio" name="q11" value="the"> the</label>
+          <label><input type="radio" name="q11" value="a"> a/an</label>
+          <label><input type="radio" name="q11" value="nothing"> nothing</label>
+        </span>
+      </span>
+      eye.
+    </p>
 
     <button type="submit">Submit Answers</button>
   </form>
@@ -315,45 +196,36 @@
   <script>
     (function() {
       const form = document.getElementById('articleTest');
-      const total = 27;
+      const total = 11;
       const progressDiv = document.getElementById('progress');
       const errorDiv = document.getElementById('error');
+
       const correctAnswers = {
-        q1: 'the', q2: 'a',  q3: 'a',  q4: 'a',  q5: 'the',
-        q6: 'the', q7: 'the',q8: 'the',q9: 'a', q10: 'the',
-        q11:'the',q12:'a', q13:'the',q14:'the',q15:'the',
-        q16:'the',q17:'the',q18:'the',q19:'the',q20:'the',
-        q21:'the',q22:'the',q23:'the',q24:'the',q25:'the',
-        q26:'a', q27:'the'
+        q1: 'the',
+        q2: 'a',
+        q3: 'the',
+        q4: 'the',
+        q5: 'a',
+        q6: 'the',
+        q7: 'the',
+        q8: 'the',
+        q9: 'the',
+        q10: 'the',
+        q11: 'a'
       };
+
       const explanations = {
-        q1: 'Use "the" because Via Sistina is unique.',
-        q2: 'Use "a" for one instance of Fiat Croma.',
-        q3: 'Use "a" for a nonspecific smoky halt.',
-        q4: 'Use "a" for one hundred feet.',
-        q5: 'Use "the" for that specific road.',
-        q6: 'Use "the" to refer back to that driver.',
-        q7: 'Use "the" for the particular street.',
-        q8: 'Use "the" for that specific direction.',
-        q9: 'Use "a" for an unspecified parking space.',
-        q10:'Use "the" before length in a precise measure.',
-        q11:'Use "the" for the parked Renault just involved.',
-        q12:'Use "a" for one minute.',
-        q13:'Use "the" for the hiss already mentioned.',
-        q14:'Use "the" to refer back to the driver.',
-        q15:'Use "the" for the specific devastation.',
-        q16:'Use "the" for that exhaust pipe.',
-        q17:'Use "the" for the identifiable pavement.',
-        q18:'Use "the" for the sky in context.',
-        q19:'Use "the" for that specific Renault.',
-        q20:'Use "the" for that side of the car.',
-        q21:'Use "the" for the particular door.',
-        q22:'Use "the" in the idiom "the gall to…".',
-        q23:'Use "the" for Via Sistina again.',
-        q24:'Use "the" for that occasional clank.',
-        q25:'Use "the" before piece when specific.',
-        q26:'Use "a" for one piece of metal.',
-        q27:'Use "the" for that eye.'
+        q1: 'Use "the" because Via Sistina is a specific street.',
+        q2: 'Use "a/an" ("a") to introduce one Fiat Croma.',
+        q3: 'Use "the" to refer to that particular driver.',
+        q4: 'Use "the" for that specific car.',
+        q5: 'Use "a/an" ("a") for one minute.',
+        q6: 'Use "the" for the specific hiss of steam.',
+        q7: 'Use "the" for the driver just mentioned.',
+        q8: 'Use "the" for the devastation he sees.',
+        q9: 'Use "the" for that Renault he hit.',
+        q10: 'Use "the" for the proper name Via Sistina.',
+        q11: 'Use "a/an" ("a") before a vowel sound in "eye."'
       };
 
       function updateProgress() {
@@ -368,8 +240,8 @@
 
       form.addEventListener('change', () => {
         errorDiv.textContent = '';
-        Array.from(form.querySelectorAll('fieldset')).forEach(fs => {
-          fs.classList.remove('invalid');
+        document.querySelectorAll('.question.invalid').forEach(el => {
+          el.classList.remove('invalid');
         });
         updateProgress();
       });
@@ -381,10 +253,10 @@
 
         // validate all answered
         for (let i = 1; i <= total; i++) {
-          const fieldset = form.querySelector(`#q${i}`);
+          const container = document.getElementById(`q${i}`);
           if (!form.querySelector(`input[name="q${i}"]:checked`)) {
             allAnswered = false;
-            fieldset.classList.add('invalid');
+            container.classList.add('invalid');
           }
         }
         if (!allAnswered) {
@@ -404,7 +276,9 @@
           output += `
             <div class="question-result">
               <strong>${i}.</strong> You answered "<em>${userAnswer}</em>". 
-              ${isCorrect ? '<span class="correct">Correct.</span>' : '<span class="incorrect">Incorrect.</span>'}
+              ${isCorrect
+                ? '<span class="correct">Correct.</span>'
+                : '<span class="incorrect">Incorrect.</span>'}
               <div class="explanation">${explanations[key]}</div>
             </div>
           `;
